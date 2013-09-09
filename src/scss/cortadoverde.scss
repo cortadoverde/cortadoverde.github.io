@@ -1,0 +1,140 @@
+@import 'modular-scale';
+@import 'settings/variables';
+@import 'compass/css3';
+
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	font-family: 'Ubuntu';
+	background: hsl(0,0%,90%);
+	font-size:16px;
+}
+
+header {
+	display: block;
+}
+
+
+.sub {
+	font-size: ms(0.1);
+	display: inline-block;
+	color:#c6c8c7;
+	vertical-align: top;
+	line-height: ms(3.2);
+	
+	&:before {
+		display: inline-block;
+		content : ' | ';
+		color : #fff;
+		@include text-shadow( -1px 1px rgba(0,0,0,0.2));
+		padding: 0 7px 0 6px;
+	}
+}
+
+// theming
+header h1:first-child {
+	display:inline-block;
+	vertical-align: top;
+	line-height: ms(3);
+}
+
+
+ul {
+	list-style: none;
+}
+
+
+nav {
+	&.menu {
+		ul > li {
+			display: inline-block;
+			a {
+				display:block;
+
+			}	
+		}
+
+
+	}
+}
+
+
+.container {
+	width: ms( 9, 1em, golden() );
+	margin: ms( 1, 1em, golden() ) auto;
+	background: hsla(0,0%,99%,0.9);
+	padding: 0 ms( 1, 1em, golden() ) 0 ms( 1, 1em, golden() );
+  	border-top:solid 4px hsl(200,100%,50%);
+	@include box-shadow(
+			4px 1px 2px -4px hsl(0,0%,60%),
+			-4px 1px 2px -4px hsl(0,0%,60%) 
+	);
+}
+
+
+.container {
+	h2 {
+		line-height: ms(3);
+	}
+
+	h3 {
+		line-height: ms(2);
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.timeline ul {
+	margin: 0 0 0 20px;
+   @include background-image(
+   			linear-gradient(
+   					left, 
+   					transparent 10px, 
+   					hsl(200,100%,50%) 10px,
+   					hsl(200,100%,50%) 15px, 
+   					transparent 15px)
+   );
+}
+
+.timeline ul li {
+    display:block;
+    margin: 0 0 ms(0.5) 20px;
+    position:relative;
+    &:before {
+    	display: block;
+    	width:10px;
+    	height: 10px;
+    	content: " ";
+    	border-radius: 100%;
+    	border:solid 10px #fff;
+    	position:absolute;
+    	left : -22px;
+    	top : calc(50% - 15px);
+    	background:hsl(200,100%,50%);
+    }
+	span {
+		display: inline-block;
+		line-height: ms(1);
+		padding: 0 ms(0.5) ;
+
+	}
+}
+
+
+.column-6 {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider { position: relative; overflow: auto; width: 100% }
+    .slider li { list-style: none; }
+        .slider ul li { float: left; }

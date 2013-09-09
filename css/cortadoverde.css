@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+/* line 8, ../src/scss/cortadoverde.scss */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* line 13, ../src/scss/cortadoverde.scss */
+body {
+  font-family: 'Ubuntu';
+  background: #e6e6e6;
+  font-size: 16px; }
+
+/* line 19, ../src/scss/cortadoverde.scss */
+header {
+  display: block; }
+
+/* line 24, ../src/scss/cortadoverde.scss */
+.sub {
+  font-size: 17px;
+  display: inline-block;
+  color: #c6c8c7;
+  vertical-align: top;
+  line-height: 75px; }
+/* line 31, ../src/scss/cortadoverde.scss */
+.sub:before {
+  display: inline-block;
+  content: ' | ';
+  color: #fff;
+  text-shadow: -1px 1px rgba(0, 0, 0, 0.2);
+  padding: 0 7px 0 6px; }
+
+/* line 41, ../src/scss/cortadoverde.scss */
+header h1:first-child {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 68px; }
+
+/* line 48, ../src/scss/cortadoverde.scss */
+ul {
+  list-style: none; }
+
+/* line 55, ../src/scss/cortadoverde.scss */
+nav.menu ul > li {
+  display: inline-block; }
+/* line 57, ../src/scss/cortadoverde.scss */
+nav.menu ul > li a {
+  display: block; }
+
+/* line 68, ../src/scss/cortadoverde.scss */
+.container {
+  width: 76.01316em;
+  margin: 1.61803em auto;
+  background: rgba(252, 252, 252, 0.9);
+  padding: 0 1.61803em 0 1.61803em;
+  border-top: solid 4px #00aaff;
+  -webkit-box-shadow: 4px 1px 2px -4px #999999, -4px 1px 2px -4px #999999;
+  -moz-box-shadow: 4px 1px 2px -4px #999999, -4px 1px 2px -4px #999999;
+  box-shadow: 4px 1px 2px -4px #999999, -4px 1px 2px -4px #999999; }
+
+/* line 82, ../src/scss/cortadoverde.scss */
+.container h2 {
+  line-height: 68px; }
+/* line 86, ../src/scss/cortadoverde.scss */
+.container h3 {
+  line-height: 42px; }
+/* line 90, ../src/scss/cortadoverde.scss */
+.container img {
+  max-width: 100%; }
+
+/* line 95, ../src/scss/cortadoverde.scss */
+.timeline ul {
+  margin: 0 0 0 20px;
+  background-image: -webkit-gradient(linear, 0% 50%, 15 50%, color-stop(66.66667%, transparent), color-stop(66.66667%, #00aaff), color-stop(100%, #00aaff), color-stop(100%, transparent));
+  background-image: -webkit-linear-gradient(left, transparent 10px, #00aaff 10px, #00aaff 15px, transparent 15px);
+  background-image: -moz-linear-gradient(left, transparent 10px, #00aaff 10px, #00aaff 15px, transparent 15px);
+  background-image: -o-linear-gradient(left, transparent 10px, #00aaff 10px, #00aaff 15px, transparent 15px);
+  background-image: linear-gradient(left, transparent 10px, #00aaff 10px, #00aaff 15px, transparent 15px); }
+
+/* line 107, ../src/scss/cortadoverde.scss */
+.timeline ul li {
+  display: block;
+  margin: 0 0 20px 20px;
+  position: relative; }
+/* line 111, ../src/scss/cortadoverde.scss */
+.timeline ul li:before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: " ";
+  border-radius: 100%;
+  border: solid 10px #fff;
+  position: absolute;
+  left: -22px;
+  top: calc(50% - 15px);
+  background: #00aaff; }
+/* line 123, ../src/scss/cortadoverde.scss */
+.timeline ul li span {
+  display: inline-block;
+  line-height: 26px;
+  padding: 0 20px; }
+
+/* line 132, ../src/scss/cortadoverde.scss */
+.column-6 {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 138, ../src/scss/cortadoverde.scss */
+.slider {
+  position: relative;
+  overflow: auto;
+  width: 100%; }
+
+/* line 139, ../src/scss/cortadoverde.scss */
+.slider li {
+  list-style: none; }
+
+/* line 140, ../src/scss/cortadoverde.scss */
+.slider ul li {
+  float: left; }
